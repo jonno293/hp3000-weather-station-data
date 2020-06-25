@@ -202,3 +202,5 @@ print ("------------------")
 print("Time",now.hour,":",now.minute, ":", now.second,"   ","Date:",now.day,".",now.month,".",now.year)
 print("Random Number:",random.randint(1,100000))
 print("End of transmission")
+
+device.reset()
