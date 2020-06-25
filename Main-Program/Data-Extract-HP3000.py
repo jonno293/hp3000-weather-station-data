@@ -193,6 +193,8 @@ def ws3000_write(command):
     except:
         print ("An error occurred:"), sys.exc_info()
         traceback.print_exc(file=sys.stdout)
+        
+    device.reset()
 
     usb.util.dispose_resources(device)
 
@@ -202,3 +204,5 @@ print ("------------------")
 print("Time",now.hour,":",now.minute, ":", now.second,"   ","Date:",now.day,".",now.month,".",now.year)
 print("Random Number:",random.randint(1,100000))
 print("End of transmission")
+
+
